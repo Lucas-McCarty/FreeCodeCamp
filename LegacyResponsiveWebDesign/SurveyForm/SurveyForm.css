@@ -1,0 +1,91 @@
+@media (min-width: 1200px) {
+  form {
+    max-width: 720px;
+  }
+}
+@media (max-width: 1199px) and (min-width: 720px) {
+  form {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+@media (max-width: 719px) {
+  form {
+    max-width: 450px;
+    min-width: 250px;
+    margin: auto;
+  }
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  text-align: center;
+  color: white;
+  margin: 60px 0 30px 0;
+}
+form {
+  margin: 50px 82px 75px 82px;
+  padding: 20px;
+  background-color: rgba(47, 42, 42, 0.9);
+  align-self: center;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+label {
+  color: white;
+  font-size: 20px;
+}
+input {
+  color: black;
+  font-size: 18px;
+}
+input::placeholder {
+  color: black;
+  font-size: 18px;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+  padding: 5px 15px 12px 15px;
+  margin: 0 0 7px 0;
+}
+.form-group p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#dropdown {
+  color: black;
+  font-size: 18px;
+}
+#most-like {
+  color: black;
+  font-size: 18px;
+}
+#comment-box {
+  color: black;
+  font-size: 18px;
+  min-height: 120px;
+}
+#submit {
+  background-color: rgb(109, 226, 241);
+  color: white;
+  width: auto;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+}

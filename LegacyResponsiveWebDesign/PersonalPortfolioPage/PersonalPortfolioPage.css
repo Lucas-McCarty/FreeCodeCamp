@@ -1,0 +1,128 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #303841;
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 1.4;
+  height: 3000px;
+}
+#navbar {
+  background-color: #be3144;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+#nav-list {
+  display: inline-flex;
+  list-style: none;
+  margin: 0 20px 0 0;
+  padding: 20px;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+#navbar a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 23.47px 20px;
+  background-color: #be3144;
+  transition: all 0.5s;
+}
+#navbar a:hover {
+  background-color: #45567d;
+}
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #303841;
+  margin-top: 50px;
+}
+#welcome-section h1 {
+  font-size: 4rem;
+  color: #f0f0f0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+#welcome-section div {
+  color: #be3144;
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+}
+#projects-section {
+  background-color: #45567d;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects-section p {
+  display: block;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 45px 0;
+  max-width: 640px;
+  color: #f0f0f0;
+  border-bottom: 0.1rem solid;
+}
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.project-tile {
+  width: 100%;
+  max-height: 400px;
+  position: relative;
+}
+
+#show-all-button {
+  background-color: #303841;
+  color: #f0f0f0;
+  font-size: 1.15rem;
+  padding: 1rem 1.4rem;
+  border: none;
+  border-radius: 3px;
+  margin: 0 0 50px 0;
+  transition: background-color 0.5s;
+}
+#show-all-button:hover {
+  background-color: #be3144;
+}
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #303841;
+  color: #f0f0f0;
+}
